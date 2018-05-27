@@ -26,6 +26,7 @@
 
               <!-- 跳转页面显示 -->
               <router-view></router-view>
+              
             </transition>
           </el-col>
         </div>
