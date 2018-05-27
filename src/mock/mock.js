@@ -9,6 +9,6 @@ Mock.mock('http://localhost:9998/fxdz/H10001', (req, res) => {
 
 Mock.mock('http://localhost:9998/fxdz/H90001', (req, res) => {
     return {
-      users : [{'custName':'xiamh','phone':'17608455522'},{}],total : 2
+      users : [{'custName':'xiamh','phone':'17608455522'}],total : 1
     }
 })
