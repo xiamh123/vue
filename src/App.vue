@@ -1,25 +1,8 @@
 <template>
   <div id="app">
 
-    <!--<router-link to="home">Home</router-link>-->
-    <!--<router-link to="about">about</router-link>-->
-
     <router-view></router-view>
 
-    <!--<el-button>默认按钮</el-button>-->
-    <!--<el-button type="primary">主要按钮</el-button>-->
-    <!--<el-button type="text">文字按钮</el-button>-->
-    <!--<el-input-number v-model="num1" @change="handleChange" :min="1" :max="10"></el-input-number>-->
-    <!--<br />-->
-    <!--<el-input placeholder="elinput输入框">a</el-input>-->
-    <!--<input placeholder="input输入框">b</input>-->
-    <!--<hr/>-->
-    <!--<event></event>-->
-    <!--<invok @newNodeEvent="parentLisen"></invok>-->
-    <!--<img src="./assets/logo.png">-->
-    <!--<IfTest></IfTest>-->
-    <!--<test></test>-->
-    <!--<hello></hello>-->
   </div>
 </template>
 

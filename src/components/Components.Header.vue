@@ -1,4 +1,4 @@
-/*
+/**
 *管理系统头部
 */
 <template>
@@ -17,15 +17,27 @@
 <script type="text/ecmascript-6">
 
   export default {
-    props: {},
+    props: ['collapsed','sysName'],
     data () {
       return {
-        collapsed: false,
-        sysName: '后台管理系统'
+        // collapsed: false,
+        // sysName: '后台管理系统'
       }
     },
     computed: {},
     methods: {
+      
+      collapse : function(){
+        
+        // this.collapsed = !this.collapsed;
+        // console.log("变更collapsed：" + this.collapsed);
+
+        console.log("---------");
+        this.$emit('changeCollapse');
+        console.log("+++++++++");
+
+      }
+
 
     }
   }

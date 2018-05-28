@@ -2,13 +2,17 @@
   <el-row class="container">
 
     <!-- 头部 -->
-    <layout-header></layout-header>
+    <layout-header 
+      v-bind:collapsed="collapsed"
+      v-bind:sysName="sysName"
+      @changeCollapse='changeCollapse'></layout-header>
 
     <!-- 主区域 -->
     <el-col :span="24" class="main">
 
       <!-- 左侧菜单 -->
-      <layout-left></layout-left>
+      <layout-left 
+        v-bind:collapsed="false"></layout-left>
 
       <!-- 主显示区 -->
       <section class="content-container">
@@ -44,8 +48,9 @@
     data() {
       return {
         collapsed: false,
-        sysUserName: '',
-        sysUserAvatar: ''
+        sysName : '管理系统',
+        sysUserName: 'xiamh',
+        sysUserAvatar: '222'
         }
     },
     components: {
@@ -64,6 +69,14 @@
 
         });
       },
+
+      changeCollapse : function(){
+        
+        this.collapsed = !this.collapsed;
+        console.log("变更collapsed：" + this.collapsed);
+
+      }
+
     }
   }
 
