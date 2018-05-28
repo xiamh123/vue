@@ -3,13 +3,20 @@
 */
 <template>
   <aside :class="collapsed?'menu-collapsed':'menu-expanded'">
+    <!-- <aside :class="menu-collapsed"> -->
     <!--导航菜单-->
-    <el-menu :default-active="$route.path" class="el-menu-vertical-demo" @open="handleopen" @close="handleclose"
-             @select="handleselect"
-             unique-opened router v-show="!collapsed">
+    <el-menu :default-active="$route.path" class="el-menu-vertical-demo" 
+            @open="handleopen" 
+            @close="handleclose"
+            @select="handleselect"
+            collapse-transition="false"
+            unique-opened router :collapse="collapsed">
       <template v-for="(item,index) in $router.options.routes" v-if="!item.hidden">
         <el-submenu :index="index+''" v-if="!item.leaf">
-          <template slot="title"><i :class="item.iconCls"></i>{{item.name}}</template>
+          <template slot="title">
+            <i :class="item.iconCls"></i>
+            <span slot="title">{{item.name}}</span>
+          </template>
           <el-menu-item v-for="child in item.children" :index="child.path" :key="child.path" v-if="!child.hidden">
             {{child.name}}
           </el-menu-item>
@@ -21,7 +28,7 @@
     </el-menu>
     
     <!--导航菜单-折叠后-->
-    <ul class="el-menu el-menu-vertical-demo collapsed" v-show="collapsed" ref="menuCollapsed">
+    <!-- <ul class="el-menu el-menu-vertical-demo collapsed" v-show="collapsed" ref="menuCollapsed">
       <li v-for="(item,index) in $router.options.routes" v-if="!item.hidden" class="el-submenu item">
         <template v-if="!item.leaf">
           <div class="el-submenu__title" style="padding-left: 20px;" @mouseover="showMenu(index,true)"
@@ -43,7 +50,7 @@
           </li>
         </template>
       </li>
-    </ul>
+    </ul> -->
   </aside>
 </template>
 
@@ -73,10 +80,10 @@
         console.log('submit!');
       },
       handleopen() {
-        //console.log('handleopen');
+        console.log('handleopen');
       },
       handleclose() {
-        //console.log('handleclose');
+        console.log('handleclose');
       },
       handleselect: function (a, b) {
       }
@@ -105,11 +112,17 @@
   /*top: 0 px;*/
   /*bottom: 0 px;*/
   }
+
+ .el-menu-vertical-demo:not(.el-menu--collapse) {
+    width: 230px;
+    min-height: 400px;
+  }
+
   .el-menu{
     height: 100%;
   }
   .collapsed {
-    width: 60px;
+    width: 6px;
   }
   .item{
     position: relative;

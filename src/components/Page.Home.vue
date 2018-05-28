@@ -11,8 +11,10 @@
     <el-col :span="24" class="main">
 
       <!-- 左侧菜单 -->
+    <!-- <transition name="fadeLeft" mode="out-in"> -->
       <layout-left 
         v-bind:collapsed="collapsed"></layout-left>
+      <!-- </transition> -->
 
       <!-- 主显示区 -->
       <section class="content-container">

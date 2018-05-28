@@ -8,7 +8,8 @@
     </el-col>
     <el-col :span="10">
       <div class="tools" @click.prevent="collapse">
-        <i class="fa fa-align-justify"></i>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTTAgMGgyNHYyNEgweiIvPgogICAgICAgIDxwYXRoIGZpbGw9IiNGRkYiIGQ9Ik0zIDE4aDE4di0ySDN2MnptMC01aDE4di0ySDN2MnptMC03djJoMThWNkgzeiIvPgogICAgPC9nPgo8L3N2Zz4K" alt="" title="收起菜单">
+        <!-- <i class="fa fa-align-justify"></i> -->
       </div>
     </el-col>
   </el-col>
@@ -66,7 +67,7 @@
     width:230px;
   }
   .logo-collapse-width{
-    width:60px
+    width:64px
   }
   .tools{
     padding: 0px 23px;
