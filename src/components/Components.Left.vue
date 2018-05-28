@@ -50,11 +50,9 @@
 <script type="text/ecmascript-6">
 
   export default {
-    props: {},
+    props: ['collapsed'],
     data () {
       return {
-        sysName:'',
-        collapsed:false,
         sysUserName: '',
         sysUserAvatar: '',
         form: {

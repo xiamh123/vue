@@ -12,7 +12,7 @@
 
       <!-- 左侧菜单 -->
       <layout-left 
-        v-bind:collapsed="false"></layout-left>
+        v-bind:collapsed="collapsed"></layout-left>
 
       <!-- 主显示区 -->
       <section class="content-container">
