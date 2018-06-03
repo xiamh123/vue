@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="23px" viewBox="0 0 12 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>收缩</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="方案三" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="指标管理-基础指标配置" transform="translate(-502.000000, -107.000000)">
+            <g id="Group-21" transform="translate(502.000000, 107.000000)">
+                <g id="Group-6">
+                    <path d="M12.0223649,23 C11.8711958,23 12.1378638,0 12.0223649,0 C5.6710903,0 0,5.14872538 0,11.5 C0,17.8512746 5.6710903,23 12.0223649,23 Z" id="Oval-3" fill="#D3DCE6"></path>
+                    <g id="ic_chevron_right_24px-copy" transform="translate(7.000000, 12.000000) scale(-1, 1) translate(-7.000000, -12.000000) translate(0.000000, 5.000000)">
+                        <g id="Group">
+                            <polygon id="Shape" points="0 0 14 0 14 14 0 14"></polygon>
+                            <polygon id="Shape" fill="#FFFFFF" points="5.83333333 3.5 5.01083333 4.3225 7.6825 7 5.01083333 9.6775 5.83333333 10.5 9.33333333 7"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

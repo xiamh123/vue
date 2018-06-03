@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="368px" height="56px" viewBox="0 0 368 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>波浪背景</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="江苏建湖" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.100000001">
+        <g id="存款" transform="translate(-270.000000, -270.000000)" fill="#FFFFFF">
+            <g id="Group-6">
+                <g id="Rectangle-11" transform="translate(270.000000, 206.000000)">
+                    <g id="Group-21" transform="translate(0.000000, 63.000000)">
+                        <path d="M0,26 C22.2775525,30.3458709 40.5008441,31.3443811 54.6698746,28.9955308 C103.483694,20.903491 102.635741,0.991061501 131.406112,0.991061501 C158.02431,0.991061501 189.556035,26 220.223453,26 C236.651933,26 254.586783,12.3392694 304.382743,12.4342651 C326.835263,12.4770978 348.041016,16.9990094 368,26 L368,57 L0,57 L0,26 Z" id="Rectangle-11"></path>
+                        <path d="M0,26 C15.4958325,27.9970205 33.719124,28.9955308 54.6698746,28.9955308 C77.5876961,28.9955308 102.635741,6.9910615 131.406112,6.9910615 C158.02431,6.9910615 189.556035,26 220.223453,26 C236.651933,26 254.586783,20.3392694 304.382743,20.4342651 C326.835263,20.4770978 348.041016,25.9990094 368,37 L368,57 L0,57 L0,26 Z" id="Rectangle-11" transform="translate(184.000000, 31.995531) scale(-1, 1) translate(-184.000000, -31.995531) "></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

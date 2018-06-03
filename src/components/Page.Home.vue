@@ -11,10 +11,8 @@
     <el-col :span="24" class="main">
 
       <!-- 左侧菜单 -->
-    <!-- <transition name="fadeLeft" mode="out-in"> -->
       <layout-left 
         v-bind:collapsed="collapsed"></layout-left>
-      <!-- </transition> -->
 
       <!-- 主显示区 -->
       <section class="content-container">
@@ -29,6 +27,9 @@
           </el-col>
           <el-col :span="24" class="content-wrapper">
             <transition name="fade" mode="out-in">
+
+              <layout-tab 
+                v-bind:collapsed="collapsed"></layout-tab>
 
               <!-- 跳转页面显示 -->
               <router-view></router-view>
@@ -45,6 +46,7 @@
 
   import LayoutHeader from './Components.Header.vue';
   import LayoutLeft from './Components.Left.vue';
+  import LayoutTab from './Components.Tab.vue';
 
   export default {
     data() {
@@ -56,7 +58,7 @@
         }
     },
     components: {
-      LayoutHeader, LayoutLeft
+      LayoutHeader, LayoutLeft,LayoutTab
     },
     methods: {
       //退出登录
