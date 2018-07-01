@@ -20,11 +20,7 @@ hr {display: none;}
 html[xmlns] .clearfix {display: block;}
 * html .clearfix {height: 1%;}
 
-html {
-  /* background: #e5e9f2; */
-  /* background: red; */
-  /* overflow: hidden; */
-}
+
 /* Link Styles */
 a {color: #2196f3;}
 a:link, a:visited {text-decoration: none;}
@@ -39,11 +35,11 @@ body {
   margin: 0;
 }
 /* Headings */
-h1, h2, h3, h4, h5, h6 {color: #2f332a;font-weight: bold;font-family: Helvetica, Arial, simsun, sans-serif;padding-bottom: 5px;}
+/* h1, h2, h3, h4, h5, h6 {color: #2f332a;font-weight: bold;font-family: Helvetica, Arial, simsun, sans-serif;padding-bottom: 5px;}
 h1 {font-size: 36px;line-height: 44px;}
 h2 {font-size: 20px;line-height: 20px;}
 h3 {font-size: 14px;line-height: 14px;}
-h4 {font-size: 14px;font-weight: normal;line-height: 25px;}
+h4 {font-size: 14px;font-weight: normal;line-height: 25px;} */
 
 
 
@@ -62,7 +58,7 @@ h4 {font-size: 14px;font-weight: normal;line-height: 25px;}
 }
 /* el-tree */
 .el-tree-node__label {
-  font-size: 12px;
+  /* font-size: 12px; */
 }
 .el-tree-node__content {
   position: relative;
@@ -100,11 +96,11 @@ h4 {font-size: 14px;font-weight: normal;line-height: 25px;}
 
 /* el-input */
 .el-input {
-  font-size: 14px;
+  /* font-size: 14px; */
 }
 .el-input input {
   width: inherit;
-  font-size: 13px;
+  /* font-size: 13px; */
   height: 25px;
   padding: 0 6px;
 }
@@ -372,7 +368,7 @@ td .el-select {
 td .el-select .el-input__inner {
   width: 100%;
   height: 25px;
-  font-size: 12px;
+  /* font-size: 12px; */
   font-weight: 100;
   color: black;
 }
@@ -380,7 +376,7 @@ td .el-select .el-input__inner {
   width: 100% !important;
   height: 24px;
   line-height: 24px;
-  font-size: 12px;
+  /* font-size: 12px; */
   padding: 2px 10px;
 }
 td .el-input {
@@ -400,100 +396,6 @@ td .el-input input {
 .el-tooltip__popper.is-light {
   border:1px solid #ddd;
 }
-/* tabs 公共样式
-.el-tabs__header {
-  border-bottom: none;
-  background-color: #f5f7fa;
-  height: 30px;
-  margin: 0 10px 0px 20px;
-}
-
-.el-tabs--card>.el-tabs__header .el-tabs__item {
-  transition: none;
-}
-
-.el-tabs__nav {
-  padding-left: 22px;
-}
-.el-tabs__new-tab {
-  display: none;
-}
-.el-tabs__content {
-  position: static;
-}
-.el-tabs__nav .el-tabs__item {
-  position: relative;
-  display: inline-block;
-  font-family: PingFang-SC;
-  font-size: 12px;
-  letter-spacing: 0.1px;
-  padding-left: 16px;
-  padding-right: 20px;
-  color: #404e68;
-  height: 30px;
-  line-height: 30px;
-  background-color: transparent;
-  border: solid 1px #eeeeee;
-  margin-left: -18px;
-  z-index: 2;
-}
-
-.el-tabs__nav .el-tabs__item:focus {
-  border: none;
-}
-
-.el-tabs__nav .el-tabs__item::before {
-  content: ' ';
-  position: absolute;
-  padding-left: 16px;
-  padding-right: 20px;
-  top: -13px;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
-  background: #f5f7fa;
-  border: 1px solid #ddd;
-  border-bottom: none;
-  border-radius: .3em .3em 0 0;
-  transform: perspective(.5em) rotateX(3.5deg);
-  transform-origin: bottom;
-  height: 42px;
-  line-height: 42px;
-}
-
-.el-tabs--card>.el-tabs__header .el-tabs__item.is-active {
-  border: none;
-}
-
-.el-tabs__item.is-active::before {
-  z-index: -1;
-  background-color: #fff;
-}
-
-.el-tabs__new-tab {
-  margin: 5px 0 9px 10px;
-}
-
-.el-tabs--card>.el-tabs__header .el-tabs__item.is-active.is-closable {
-  padding-left: 16px;
-  padding-right: 20px;
-  z-index: 3;
-}
-.el-tabs--card>.el-tabs__header .el-tabs__item .el-icon-close {
-  width: 14px;
-}
-.el-tabs--card>.el-tabs__header .el-tabs__item.is-closable:hover {
-  padding-left: 16px;
-  padding-right: 20px;
-}
-
-.el-tabs__new-tab {
-  visibility: hidden;
-}
-.el-message__group p {
-  color: #2196f3;
-} */
 
 /* table中的表单元素样式 */
 table td .el-date-editor.el-input {
@@ -602,7 +504,7 @@ table td .el-date-editor.el-input {
 }
 
 .el-table .cell {
-  font-size: 12px;
+  /* font-size: 12px; */
   padding: 0 6px;
 }
 

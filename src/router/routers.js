@@ -5,7 +5,7 @@
  */
 import Util from "../utils/toolUtil.js"
 import About from '../components/Page.About.vue'
-import Home from '../components/Page.NewHome.vue'
+import Home from '../components/Page.Home.vue'
 
 import Event from '../components/Event.vue'
 import Hello from '../components/Hello.vue'
@@ -20,35 +20,38 @@ let routesGet = [];
 export default {
   routes: [
     {
-      name: 'login',
+      name: '登录',
       path: '/login',   // 注册 登录
       hidden: true,
-      meta: {
-        requiresAuth: false,
-        name: '登录'
-      },
+      requiresAuth: false,
       component: require('../components/Page.Login.vue')
     },
     {
+      name: '首页',
       path: '/',
-      component: Home,
-      meta: {
-        requiresAuth: true,
-        name:'首页'
-      },
-      name: '',
-      iconCls: 'el-icon-message',//图标样式class
-      children: [
-        { path: '/main', component: About, name: '测试', hidden: true ,meta:{name:'首页'}},
-        { path: '/about', component: About, name: 'Table' ,meta:{name:'表格Table'}},
-        { path: '/event', component: Event, name: 'Event' ,meta:{name:'Event'}},
-        { path: '/hello', component: Hello, name: 'Hello' ,meta:{name:'Hello'}},
-        { path: '/query', component: Query, name: '增删改查' ,meta:{name:'增删改查'}},
-        { path: '/test', component: Test, name: '学习',meta:{name:'学习'} },
-        { path: '/demo', component: require('../components/Page.Demo.vue'), name: '演示',meta:{name:'掩饰'} },
-        { path: '/ui_demo', component: require('../components/Page.UiDemo.vue'), name: 'ElementUI测试',meta:{name:'ElementUI测试'} }
-      ]
-    }
+      component: require('../components/Page.Home.vue'),
+      requiresAuth: true,
+  }
+    // {
+    //   name: '首页',
+    //   path: '/',
+    //   component: Home,
+    //   meta: {
+    //     requiresAuth: true,
+    //     name:'首页'
+    //   },
+    //   iconCls: 'el-icon-message',//图标样式class
+    //   children: [
+    //     { path: '/main', component: About, name: '测试', hidden: true ,meta:{name:'首页'}},
+    //     { path: '/about', component: About, name: 'Table' ,meta:{name:'表格Table'}},
+    //     { path: '/event', component: Event, name: 'Event' ,meta:{name:'Event'}},
+    //     { path: '/hello', component: Hello, name: 'Hello' ,meta:{name:'Hello'}},
+    //     { path: '/query', component: Query, name: '增删改查' ,meta:{name:'增删改查'}},
+    //     { path: '/test', component: Test, name: '学习',meta:{name:'学习'} },
+    //     { path: '/demo', component: require('../components/Page.Demo.vue'), name: '演示',meta:{name:'掩饰'} },
+    //     { path: '/ui_demo', component: require('../components/Page.UiDemo.vue'), name: 'ElementUI测试',meta:{name:'ElementUI测试'} }
+    //   ]
+    // }
   ],
   //使用前端路由，当切换到新路由时，想要页面滚到顶部，或者是保持原先的滚动位置，就像重新加载页面那样。
   // scrollBehavior(to, from, savedPosition) {
@@ -95,7 +98,7 @@ export default {
     window.scrollTo(0, 0);
 
     // TODO: 路由加载前校验登录信息
-    if (to.matched.some(record => record.meta.requiresAuth)) {
+    if (to.matched.some(record => record.requiresAuth)) {
       // console.log("------beforeEach-------22");
       console.log(this.routes);
       // console.log("------beforeEach-------2222");

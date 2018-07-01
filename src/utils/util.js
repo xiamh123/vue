@@ -1,5 +1,8 @@
 var SIGN_REGEXP = /([yMdhsm])(\1*)/g;
 var DEFAULT_PATTERN = 'yyyy-MM-dd';
+
+
+
 function padding(s, len) {
     var len = len - (s + '').length;
     for (var i = 0; i < len; i++) { s = '0' + s; }
@@ -7,6 +10,27 @@ function padding(s, len) {
 };
 
 export default {
+
+    decode: function(){
+        console.log("decode-------");
+        console.log(arguments);
+        if(arguments.length > 3){
+            var flag = true;
+            var result = arguments[0];
+            for(var i = 1;i<arguments.length;i++){
+                if(i%2!=0 && arguments[0] == arguments[i]){
+                    flag = false;
+                    result = arguments[i+1];
+                }
+            }
+            if(flag){
+                result = arguments[arguments.length-1];
+            }
+            return result;
+        }
+        return;
+    },
+
     getQueryStringByName: function (name) {
         var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
         var r = window.location.search.substr(1).match(reg);

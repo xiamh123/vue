@@ -28,8 +28,8 @@
           <el-col :span="24" class="content-wrapper">
             <transition name="fade" mode="out-in">
 
-              <layout-tab 
-                v-bind:collapsed="collapsed"></layout-tab>
+              <!-- <layout-tab 
+                v-bind:collapsed="collapsed"></layout-tab> -->
 
               <!-- 跳转页面显示 -->
               <router-view></router-view>

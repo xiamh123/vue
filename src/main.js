@@ -52,7 +52,8 @@ Vue.prototype.$AxiosAjax = ({url = '', params = {}, method = 'post', loading = f
       baseURL = 'http://10.7.2.8:48080/kpms'
       break
     case 'development': // 本地开发环境
-      baseURL = 'http://localhost:9998/fxdz'
+      // baseURL = 'http://localhost:9998/fxdz'
+      baseURL = 'http://localhost:9999'
       break
     case 'onlinedev': // 测试服务器dev，非本地开发环境
       baseURL = 'http://10.7.2.8:8080/kpms'

@@ -8,15 +8,14 @@
             @open="handleopen" 
             @close="handleclose"
             @select="handleselect"
-            collapse-transition="false"
             unique-opened router :collapse="collapsed">
-      <template v-for="(item,index) in $router.options.routes" v-if="!item.hidden">
+      <template v-for="(item,index) in $router.options.routes" v-if="typeof(item.hidden)!='undefined' && !item.hidden">
         <el-submenu :index="index+''" v-if="!item.leaf">
           <template slot="title">
             <i :class="item.iconCls"></i>
             <span slot="title">{{item.name}}</span>
           </template>
-          <el-menu-item v-for="child in item.children" :index="child.path" :key="child.path" v-if="!child.hidden">
+          <el-menu-item v-for="child in item.children" :index="child.path" :key="child.path" v-if="typeof(child.hidden)!='undefined' && !child.hidden">
             {{child.name}}
           </el-menu-item>
         </el-submenu>
